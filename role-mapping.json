@@ -1,0 +1,238 @@
+{
+  "TR002": {
+    "name": "Music",
+    "roles": []
+  },
+  "TR003": {
+    "name": "History",
+    "roles": []
+  },
+  "TR004": {
+    "name": "Law",
+    "roles": []
+  },
+  "TR005": {
+  "name": "Philosophy",
+  "roles": []
+},
+  "TR006": {
+  "name": "Psychology",
+  "roles": []
+},
+  "TR007": {
+  "name": "Clinical Speech and Language Studies",
+  "roles": []
+},
+  "TR009": {
+  "name": "Music Education",
+  "roles": []
+},
+  "TR012": {
+  "name": "History and Political Science",
+  "roles": []
+},
+  "TR015": {
+  "name": "Philosophy Political Science Economics and Sociolology",
+  "roles": []
+},
+  "TR016": {
+  "name": "Deaf Studies",
+  "roles": []
+},
+  "TR017": {
+  "name": "Law and Business",
+  "roles": []
+},
+  "TR018": {
+  "name": "Law and French",
+  "roles": []
+},
+  "TR019": {
+  "name": "Law and German",
+  "roles": []
+},
+  "TR020": {
+  "name": "Law and Political Science",
+  "roles": []
+},
+  "TR021": {
+  "name": "Classics",
+  "roles": []
+},
+  "TR022": {
+  "name": "Early and Modern Irish Ancient History and Archeology",
+  "roles": []
+},
+  "TR023": {
+  "name": "English Studies",
+  "roles": []
+},
+  "TR024": {
+  "name": "European Studies",
+  "roles": []
+},
+  "TR025": {
+  "name": "Drama and Theatre Studies",
+  "roles": []
+},
+  "TR028": {
+  "name": "Ancient and Medieval History and Culture",
+  "roles": []
+},
+  "TR029": {
+  "name": "Political Science and Geography",
+  "roles": []
+},
+  "TR031": {
+  "name": "Mathematics",
+  "roles": []
+},
+  "TR032": {
+  "name": "Engineering",
+  "roles": []
+},
+  "TR033": {
+  "name": "Computer Science",
+  "roles": []
+},
+  "TR034": {
+  "name": "Management Science and Information Systems Studies",
+  "roles": []
+},
+  "TR035": {
+  "name": "Theoretical Physics",
+  "roles": []
+},
+  "TR038": {
+  "name": "Engineering with Management",
+  "roles": []
+},
+  "TR039": {
+  "name": "Computer Science and Language",
+  "roles": []
+},
+  "TR040": {
+  "name": "Middle Eastern and European Languages and Cultures",
+  "roles": []
+},
+  "TR041": {
+  "name": "Religion",
+  "roles": []
+},
+  "TR042": {
+  "name": "Film",
+  "roles": []
+},
+  "TR043": {
+  "name": "Hisotry of Art and Architecture",
+  "roles": []
+},
+  "TR051": {
+  "name": "Medicine",
+  "roles": []
+},
+  "TR052": {
+  "name": "Dental Science",
+  "roles": []
+},
+  "TR053": {
+  "name": "Physiotherapy",
+  "roles": []
+},
+  "TR054": {
+  "name": "Occupational Therapy",
+  "roles": []
+},
+  "TR055": {
+  "name": "Radiation Therapy",
+  "roles": []
+},
+  "TR056": {
+  "name": "Human Health and Disease",
+  "roles": []
+},
+  "TR060": {
+  "name": "Biological and Biomedical Sciences",
+  "roles": []
+},
+  "TR061": {
+  "name": "Chemical Sciences",
+  "roles": []
+},
+  "TR062": {
+  "name": "Geography and Geoscience",
+  "roles": []
+},
+  "TR063": {
+  "name": "Physical Sciences",
+  "roles": []
+},
+  "TR072": {
+  "name": "Pharmacy",
+  "roles": []
+},
+  "TR080": {
+  "name": "Global Business",
+  "roles": []
+},
+  "TR081": {
+  "name": "Business Economic and Social Studies",
+  "roles": []
+},
+  "TR082": {
+  "name": "Computer Science and Business",
+  "roles": []
+},
+  "TR083": {
+  "name": "Sociology and Social Policy",
+  "roles": []
+},
+  "TR084": {
+  "name": "Social Studies (Social Work)",
+  "roles": []
+},
+  "TR085": {
+  "name": "Business Studies and French",
+  "roles": []
+},
+  "TR086": {
+  "name": "Business Studies and German",
+  "roles": []
+},
+  "TR087": {
+  "name": "Business Studies and Russian",
+  "roles": []
+},
+  "TR089": {
+  "name": "Business Studies and Polish",
+  "roles": []
+},
+  "TR090": {
+  "name": "Business Studies and Spanish",
+  "roles": []
+},
+  "TR091": {
+  "name": "General Nursing (Meath and St Jame's)",
+  "roles": []
+},
+  "TR093": {
+  "name": "General Nursing (Adelaide School of Nursing)",
+  "roles": []
+},
+  "TR095": {
+  "name": "Mental Health Nursing",
+  "roles": []
+},
+  "TR097": {
+  "name": "Intellectual Disability Nursing",
+  "roles": []
+},
+  "TR911": {
+  "name": "Children's and General Nursing (Integrated)",
+  "roles": []
+},
+  "TR913": {
+  "name": "Midwifery",
+  "roles": []
+}
+}
