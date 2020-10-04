@@ -3,7 +3,11 @@ package io.paradaux.tcdbot;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
+import com.jagrosh.jdautilities.command.CommandClient;
+import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import io.paradaux.tcdbot.api.ConfigurationCache;
+import io.paradaux.tcdbot.api.FileUtils;
+import io.paradaux.tcdbot.listeners.MessageReceivedListener;
 import io.paradaux.tcdbot.listeners.ReadyListener;
 
 import net.dv8tion.jda.api.JDA;
@@ -16,6 +20,7 @@ import sun.security.krb5.Config;
 
 import javax.security.auth.login.LoginException;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
@@ -37,6 +42,16 @@ public class TCDBot {
         logger = LoggerFactory.getLogger(getClass());
         logger.info("TCDBot is starting.");
 
+        if (!new File("configuration.yml").exists()) {
+            try {
+                FileUtils.ExportResource("configuration.json");
+            } catch (Exception exception) {
+                logger.error("Failed to deploy configuration.\n" + exception.toString());
+                return;
+            }
+
+        }
+
         try {
             configurationCache = readConfigurationFile();
         } catch (FileNotFoundException exception) {
@@ -49,12 +64,10 @@ public class TCDBot {
 
     @Nullable
     public JDA login(String token) {
-        JDABuilder builder = JDABuilder.createDefault(token);
-
-        builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
-        builder.setBulkDeleteSplittingEnabled(false);
-
-        builder.addEventListeners(new ReadyListener(logger));
+        JDABuilder builder = JDABuilder.createDefault(token)
+                .disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE)
+                .setBulkDeleteSplittingEnabled(false)
+                .addEventListeners(new ReadyListener(logger), new MessageReceivedListener(configurationCache));
 
         if (token == null) {
             logger.warn("You have not set the token for your discord bot for discord2mc functionality. This has been disabled.");
@@ -75,5 +88,10 @@ public class TCDBot {
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader("configuration.json"));
         return gson.fromJson(bufferedReader, ConfigurationCache.class);
+    }
+
+    public CommandClient createCommandClient() {
+        CommandClientBuilder builder = new CommandClientBuilder();
+        return null;
     }
 }
